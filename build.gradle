@@ -1,12 +1,13 @@
 buildscript {
     ext.kotlin_version = '1.9.10'
+    ext.ar_core_version = '1.42.0'
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.4'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23"
         // Maven Central Publish
         classpath "com.vanniktech:gradle-maven-publish-plugin:0.25.3"
         // Dokka
