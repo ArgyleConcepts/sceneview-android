@@ -39,11 +39,11 @@ if (project.properties['filamentPluginEnabled']?.toBoolean()) {
 android {
     namespace 'io.github.sceneview'
 
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 24
-        targetSdk 34
+        targetSdk 35
 
         consumerProguardFiles 'consumer-rules.pro'
 
@@ -93,19 +93,19 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.7.3"
 
     // AndroidX
-    implementation "androidx.annotation:annotation:1.7.1"
-    api "androidx.lifecycle:lifecycle-common-java8:2.7.0"
+    implementation "androidx.annotation:annotation:1.9.1"
+    api "androidx.lifecycle:lifecycle-common-java8:2.8.7"
     api "androidx.lifecycle:lifecycle-extensions:2.2.0"
 
     // Android KTX
-    api "androidx.core:core-ktx:1.12.0"
-    api "androidx.fragment:fragment-ktx:1.6.2"
-    api "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
+    api "androidx.core:core-ktx:$core_ktx_version"
+    api "androidx.fragment:fragment-ktx:1.8.5"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
 
     // Compose
-    implementation "androidx.compose.ui:ui:1.6.4"
-    implementation "androidx.compose.foundation:foundation:1.6.4"
-    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.7.0"
+    implementation "androidx.compose.ui:ui:1.7.6"
+    implementation "androidx.compose.foundation:foundation:1.7.6"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.8.7"
 
     // kotlin-math
     api 'dev.romainguy:kotlin-math:1.5.3'
